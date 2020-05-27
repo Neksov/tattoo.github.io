@@ -1,0 +1,47 @@
+.header
+  box-shadow: 0 2px 20px #5a5a5a
+  background-color: #5a5a5a
+  height: 70px
+  &__phone
+    text-align: center
+    a
+      display: block
+      &:hover
+        opacity: 0.7
+
+.navbar-brand
+  color: #ffffff
+  font-size: 23px
+  font-weight: 700
+  letter-spacing: 0.5px
+  &:hover
+    opacity: 0.7
+.nav-item
+  a
+    color: #ffffff
+    font-size: 16px
+    font-weight: 400
+    padding: 0px 10px
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      left: 15px
+      bottom: -5px
+      width: 0%
+      height: 1px
+      background: #ffe400
+    &:hover
+      opacity: 0.7
+      &::before
+        width: 25%
+.phone
+  color: #ffffff !important
+  font-size: 20px
+  font-weight: 700
+  letter-spacing: 0.5px
+.callback
+  color: #ffe400 !important
+  font-size: 13px
+  font-weight: 400
+  border-bottom: 1px dashed #ffe400
