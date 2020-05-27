@@ -1,21 +1,45 @@
 .btn
-  padding: 1rem 2.3rem
+  width: 205px
   border: none
-  border-radius: 30px
-  font-size: 1rem
-  font-weight: 500
-  box-sizing: border-box
-  text-transform: uppercase
-  border-radius: 35px
-  transition: box-shadow 0.3s
   cursor: pointer
-  &--light
-    background: #FAF9F9
-    border: 1px solid #E5E5E5
+  color: #000000
+  font-size: 16px
+  font-weight: 400
+  line-height: 50px
+  background: transparent
+  position: relative
+  &::before, &::after
+    content: ""
+    position: absolute
+    width: 30%
+    height: 40%
+  &::before
+    top: 0
+    left: 0
+    border-top: 3px solid #ffe400
+    border-left: 3px solid #ffe400
+  &::after
+    right: 0
+    bottom: 0
+    border-right: 3px solid #ffe400
+    border-bottom: 3px solid #ffe400
   &:hover
-    box-shadow: none
-  &:active, &:focus 
-    outline: none
+    background: #ffe400
+    &::before
+      top: -20px
+      left: -20px
+      border-top: 3px solid #000
+      border-left: 3px solid #000
+      width: 30px
+      height: 30px
+  &:hover
+    &::after
+      right: -20px
+      bottom: -20px
+      border-right: 3px solid #000
+      border-bottom: 3px solid #000
+      width: 30px
+      height: 30px
 label
   &.invalid
     position: absolute

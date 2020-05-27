@@ -35,7 +35,7 @@ img {
   width: 100%;
   height: 100%; }
 
-a, before, after {
+a, :before, :after, button {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out; }
 
@@ -43,29 +43,63 @@ a, before, after {
   .container {
     max-width: 1200px; } }
 
+@-webkit-keyframes arrowBottom {
+  0% {
+    bottom: 40px; }
+  50% {
+    bottom: 20px; }
+  100% {
+    bottom: 40px; } }
+
+@keyframes arrowBottom {
+  0% {
+    bottom: 40px; }
+  50% {
+    bottom: 20px; }
+  100% {
+    bottom: 40px; } }
+
 .btn {
-  padding: 1rem 2.3rem;
+  width: 205px;
   border: none;
-  border-radius: 30px;
-  font-size: 1rem;
-  font-weight: 500;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  text-transform: uppercase;
-  border-radius: 35px;
-  -webkit-transition: -webkit-box-shadow 0.3s;
-  transition: -webkit-box-shadow 0.3s;
-  transition: box-shadow 0.3s;
-  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
-  cursor: pointer; }
-  .btn--light {
-    background: #FAF9F9;
-    border: 1px solid #E5E5E5; }
+  cursor: pointer;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 50px;
+  background: transparent;
+  position: relative; }
+  .btn::before, .btn::after {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 40%; }
+  .btn::before {
+    top: 0;
+    left: 0;
+    border-top: 3px solid #ffe400;
+    border-left: 3px solid #ffe400; }
+  .btn::after {
+    right: 0;
+    bottom: 0;
+    border-right: 3px solid #ffe400;
+    border-bottom: 3px solid #ffe400; }
   .btn:hover {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
-  .btn:active, .btn:focus {
-    outline: none; }
+    background: #ffe400; }
+    .btn:hover::before {
+      top: -20px;
+      left: -20px;
+      border-top: 3px solid #000;
+      border-left: 3px solid #000;
+      width: 30px;
+      height: 30px; }
+  .btn:hover::after {
+    right: -20px;
+    bottom: -20px;
+    border-right: 3px solid #000;
+    border-bottom: 3px solid #000;
+    width: 30px;
+    height: 30px; }
 
 label.invalid {
   position: absolute;
@@ -79,7 +113,12 @@ input.invalid {
   -webkit-box-shadow: 0 2px 20px #5a5a5a;
   box-shadow: 0 2px 20px #5a5a5a;
   background-color: #5a5a5a;
-  height: 70px; }
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; }
   .header__phone {
     text-align: center; }
     .header__phone a {
@@ -104,7 +143,7 @@ input.invalid {
   .nav-item a::before {
     content: '';
     position: absolute;
-    left: 15px;
+    left: 10px;
     bottom: -5px;
     width: 0%;
     height: 1px;
@@ -125,3 +164,41 @@ input.invalid {
   font-size: 13px;
   font-weight: 400;
   border-bottom: 1px dashed #ffe400; }
+
+.offer {
+  background: url(../img/heroFone.jpg) no-repeat center/cover;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative; }
+  .offer__info {
+    margin-top: 5rem; }
+  .offer__title {
+    color: #313131;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 1.5px; }
+  .offer__text {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 34px 0; }
+
+.arrow-bottom {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  text-align: center;
+  -webkit-animation: arrowBottom 1.7s infinite;
+  animation: arrowBottom 1.7s infinite; }
+  .arrow-bottom a {
+    display: inline-block;
+    padding: 30px;
+    opacity: 0.5; }
+    .arrow-bottom a:hover {
+      opacity: 1; }
