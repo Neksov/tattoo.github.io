@@ -40,6 +40,24 @@
       border-bottom: 3px solid #000
       width: 30px
       height: 30px
+.block-title
+  color: #313131
+  font-size: 42px
+  font-weight: 700
+  text-align: center
+  position: relative
+  &::after, &::before
+    position: absolute
+    content: ''
+    background: url(../img/rhombus.png) no-repeat center
+    width: 14px
+    height: 100%
+  &::after
+    transform: translateX(20px)
+  &::before
+    transform: translateX(-34px)    
+section
+  padding: 100px 0
 label
   &.invalid
     position: absolute
