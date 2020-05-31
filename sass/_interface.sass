@@ -14,13 +14,13 @@
     width: 30%
     height: 40%
   &::before
-    top: 0
+    top: 5px
     left: 0
     border-top: 3px solid #ffe400
     border-left: 3px solid #ffe400
   &::after
     right: 0
-    bottom: 0
+    bottom: 5px
     border-right: 3px solid #ffe400
     border-bottom: 3px solid #ffe400
   &:hover
@@ -40,7 +40,17 @@
       border-bottom: 3px solid #000
       width: 30px
       height: 30px
-.block-title
+  &__white
+    color: #ffffff
+    &:hover
+      &::before
+        border-top: 3px solid #ffe400
+        border-left: 3px solid #ffe400
+    &:hover
+      &::after
+        border-right: 3px solid #ffe400
+        border-bottom: 3px solid #ffe400
+.blockTitle
   color: #313131
   font-size: 42px
   font-weight: 700
@@ -55,14 +65,34 @@
   &::after
     transform: translateX(20px)
   &::before
-    transform: translateX(-34px)    
+    transform: translateX(-34px)   
+.blockTitle
+  &__white
+    color: #ffffff
 section
   padding: 100px 0
-label
-  &.invalid
-    position: absolute
-    margin-top: 53px
-    color: #000
-input
-  &.invalid
-    border-bottom: 1px solid red   
+.form
+  p
+    color: #dcdcdc
+    font-size: 16px
+    font-weight: 400
+.form
+  p
+    span
+      color: #ffe400
+.input
+  background: transparent
+  border: none
+  border-bottom: 1px solid #ffe400
+  color: #ffffff
+  width: 100%
+  margin-bottom: 30px
+  padding: 5px 10px
+  cursor: pointer
+  &::placeholder
+    color: #7c7c7c
+    font-size: 14px
+    font-weight: 400
+    letter-spacing: -0.8px
+  &:hover, &:focus
+    opacity: 0.7
