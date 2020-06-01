@@ -3,6 +3,10 @@
   &__slide
     max-width: 960px
     margin: 40px auto 0px
+  &:hover
+    .baw
+      opacity: 0
+      visibility: hidden
 .carousel-control-prev
   left: -15%
   img
@@ -16,11 +20,11 @@
     height: 50px
     opacity: 0.68
 .carousel-item, .color-img
-  position: absolute
+  position: relative
   top: 0
   left: 0
   z-index: 0
 .baw
-  position: relative
+  position: absolute
   opacity: 1
   z-index: 2
