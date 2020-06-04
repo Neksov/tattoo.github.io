@@ -7,7 +7,6 @@
   <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
-  <link rel="stylesheet" href="css/swiper.min.css" />
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/animate.min.css" media="all" />
@@ -27,19 +26,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav m-auto">
             <li class="nav-item ">
-              <a href="#">Работы</a>
+              <a href="#ourwork">Работы</a>
             </li>
             <li class="nav-item ">
-              <a href="#">Студия</a>
+              <a href="#foto">Студия</a>
             </li>
             <li class="nav-item ">
-              <a href="#">Мастера</a>
+              <a href="#master">Мастера</a>
             </li>
             <li class="nav-item ">
-              <a href="#">Вопросы</a>
+              <a href="#question">Вопросы</a>
             </li>
             <li class="nav-item ">
-              <a href="#">Контакты</a>
+              <a href="#contact">Контакты</a>
             </li>
           </ul>
           <div class="header__phone">
@@ -77,56 +76,49 @@
       <div class="container">
         <h2 class="blockTitle">Наши лучшие работы</h2>
         <div class="row">
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="1s">
             <div class="ourwork__wrap">
               <a href="img/work1.jpg" data-fancybox="images" data-caption="tattoo for you"><img src="img/work1.jpg"
                   alt="tattoo"></a>
             </div>
           </div>
-
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="1.2s">
             <div class="ourwork__wrap">
               <a href="img/work2.jpg" data-fancybox="images" data-caption="tattoo for you"><img src="img/work2.jpg"
                   alt="tattoo"></a>
             </div>
           </div>
-
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="1.4s">
             <div class="ourwork__wrap">
               <a href="img/work3.jpg" data-fancybox="gallery" data-caption="tattoo for you"><img src="img/work3.jpg"
                   alt="tattoo"></a>
             </div>
           </div>
-
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="1.6s">
             <div class="ourwork__wrap">
               <a href="img/work4.jpg" data-fancybox="gallery" data-caption="tattoo for you"><img src="img/work4.jpg"
                   alt="tattoo"></a>
             </div>
           </div>
-
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="1.8s">
             <div class="ourwork__wrap">
               <a href="img/work5.jpg" data-fancybox="gallery" data-caption="tattoo for you"><img src="img/work5.jpg"
                   alt="tattoo"></a>
             </div>
           </div>
-
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="2s">
             <div class="ourwork__wrap">
               <a href="img/work6.jpg" data-fancybox="gallery" data-caption="tattoo for you"><img src="img/work6.jpg"
                   alt="tattoo"></a>
             </div>
           </div>
-
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="2.2s">
             <div class="ourwork__wrap">
               <a href="img/work7.jpg" data-fancybox="gallery" data-caption="tattoo for you"><img src="img/work7.jpg"
                   alt="tattoo"></a>
             </div>
           </div>
-
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="2.4s">
             <div class="ourwork__wrap">
               <a href="img/work8.jpg" data-fancybox="gallery" data-caption="tattoo for you"><img src="img/work8.jpg"
                   alt="tattoo"></a>
@@ -142,7 +134,7 @@
         <h2 class="blockTitle blockTitle__white">Хочешь татуировку?</h2>
         <h3 class="blockSubTitle">Дерзай!</h3>
         <div class="row ">
-          <div class="offset-lg-2 col-lg-4 ">
+          <div class="offset-lg-2 col-lg-4 col-md-5 col-sm-12 col-12">
             <form class="form feedback__form">
               <h3>Перезвоним за 5 минут!</h3>
               <p><span>Оставьте заявку</span> и ожидайте звонка<br>
@@ -154,15 +146,14 @@
                 условиями по обработке персональных данных</small>
             </form>
           </div>
-
-          <div class="offset-lg-1 col-lg-4">
+          <div class="offset-lg-1  col-lg-4 col-md-4 col-sm-12 col-12">
             <img src="img/feedback-man.png" alt="man" class="man">
           </div>
         </div>
       </div>
     </section>
     <!-- /.feedback -->
-    <section class="foto">
+    <section class="foto" id="foto">
       <div class="container">
         <h2 class="blockTitle">Наша студия</h2>
         <div class="slide foto__slide">
@@ -200,16 +191,16 @@
       </div>
     </section>
     <!-- /.foto -->
-    <section class="master">
+    <section class="master" id="master">
       <div class="container">
         <h2 class="blockTitle">Наши мастера</h2>
         <div class="row align-items-center">
-          <div class="offset-lg-1 col-lg-5">
+          <div class="offset-lg-1 offset-md-1 col-lg-5 col-md-5 col-sm-12 col-12">
             <div class="masters-wrap">
               <img src="img/master1.jpg" alt="master" class="masterFoto">
             </div>
           </div>
-          <div class="offset-lg-1 col-lg-4">
+          <div class="offset-lg-1 offset-md-1 col-lg-4 col-md-4 col-sm-12 col-12">
             <div class="masters-wrap">
               <h3>Илья Гусев</h3>
               <div class="desc">
@@ -223,7 +214,7 @@
           </div>
         </div>
         <div class="row align-items-center">
-          <div class="offset-lg-2 col-lg-4">
+          <div class="offset-lg-2 offset-md-1 col-lg-4 col-md-4 col-sm-12 col-12 secondmaster">
             <div class="masters-wrap">
               <h3>Марк Степанов</h3>
               <div class="desc">
@@ -235,19 +226,19 @@
               <button class="btn btn" type="submit">Записаться</button>
             </div>
           </div>
-          <div class="col-lg-5">
+          <div class="offset-md-1 col-lg-5 col-md-5 col-sm-12 col-12">
             <div class="masters-wrap">
               <img src="img/master2.jpg" alt="master" class="masterFoto">
             </div>
           </div>
         </div>
         <div class="row align-items-center">
-          <div class="offset-lg-1 col-lg-5">
+          <div class="offset-lg-1 offset-md-1 col-lg-5 col-md-5 col-sm-12 col-12">
             <div class="masters-wrap">
               <img src="img/master3.jpg" alt="master" class="masterFoto">
             </div>
           </div>
-          <div class="offset-lg-1 col-lg-4">
+          <div class="offset-lg-1 offset-md-1 col-lg-4 col-md-4 col-sm-12 col-12">
             <div class="masters-wrap">
               <h3>Сергей Казаков</h3>
               <div class="desc">
@@ -263,7 +254,7 @@
       </div>
     </section>
     <!-- /.master -->
-    <section class="question">
+    <section class="question" id="question">
       <div class="container">
         <h2 class="blockTitle">Ответы на вопросы</h2>
         <div id="accordion">
@@ -371,20 +362,19 @@
     </section>
     <!-- /.question -->
   </main>
-  <footer class="contact">
+  <footer class="contact" id="contact">
     <div class="container">
       <h2 class="blockTitle blockTitle__white">Связь с нами</h2>
       <form class="form contact__form">
         <p class="text-center"><span>Мы любим</span> отвечать на ваши вопросы<br>
           и всегда рады новым письмам!</p>
         <div class="row contact__row">
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-12">
             <input type="text" class="input" placeholder="Ваше имя">
             <input type="text" class="input" placeholder="Ваше телефон">
             <input type="text" class="input" placeholder="Ваше email">
-
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-12">
             <textarea class="input textarea" placeholder="Ваше сообщение"></textarea>
           </div>
         </div>
@@ -404,6 +394,12 @@
     </div>
   </footer>
   <!-- /.contact -->
+  <div class="buttonUp">
+    <span id="button-up">
+      <img src="img/angle-up-solid.svg" alt="up" />
+    </span>
+  </div>
+
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
   </script>
@@ -413,12 +409,11 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
   </script>
+
   <script src="js/jquery-3.5.1.min.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
-  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-  <script src="js/jquery.validate.min.js"></script>
-  <script src="js/jquery.mask.min.js"></script>
+
+  <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/buttonUp.min.js"></script>
 </body>
